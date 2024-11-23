@@ -1,0 +1,19 @@
+
+
+^y = B0 + B1X1 + B2X2 ... + BnXn
+
+RSS - equals the sum from i=1 to n of (yi - ^yi)^2
+
+B1 (coefficient of x) - sum from i=1 to n of (yi - ybar (avg)) * (xi - xbar) / sum from i=1 to n of (xi - xbar)^2 
+
+B0 (intercept) - ybar - B1xbar
+
+Use RSS formula to estimate B1 & B0
+
+SE for B0 & B1 
+
+RSE = sqrt(RSS / (n - 2))
+
+t-statistic = (B1 - 0 (H0)) / SE(B1)
+
+Var(error) = RSE^2
