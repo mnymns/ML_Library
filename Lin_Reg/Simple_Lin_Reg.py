@@ -1,11 +1,11 @@
 import stats
 
 class Regression:
-    # create initializer (data is a df)
-    def __init__(self, df):
+    # create initializer
+    def __init__(self, x, y):
         # x & y used for iteration purposes
-        self.x = df.iloc[:, 0]
-        self.y = df.iloc[:, 1]
+        self.x = x
+        self.y = y
         # B1 num & den used to calculate B1
         B1_num = 0
         B1_den = 0

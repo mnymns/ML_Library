@@ -7,7 +7,9 @@ file = open('Advertising.csv')
 df = pd.read_csv(file, usecols=[1, 4])
 file.close()
 
-model = Regression(df)
+x = df.iloc[:, 0]
+y = df.iloc[:, 1]
+model = Regression(x, y)
 B1 = model.B1
 B0 = model.B0
 t_stat = model.t_statistic(B0)
